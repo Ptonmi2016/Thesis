@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Test</title>
+<meta name="description" content="graceful degration example">
+<meta name="keywords" content="graceful degration">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<a href="https://www.baidu.com/" onclick="popUp(this.href); return false;">点我啊</a> 
+<script type="text/javascript">
+	//With graceful degration, the JS code still get involved in the HTML 
+	function popUp(winURL){
+		window.open(winURL,"popup","width=320,height=480");
+	}
+</script>  
+</body>
+</html>
