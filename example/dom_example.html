@@ -9,9 +9,18 @@
     <a href="#">Una enlace</a>
 
     <script>
+    //nodos de elemento 
 	console.log(document.all);
 	console.log(document.head.children);
 	console.log(document.body.children);
+
+	//nodos de atributo
+	var meta = document.all[2];
+	console.log(meta.attributes[0]);
+
+	//nodos de texto
+	var titulo = document.all[3];
+	console.log(titulo.childNodes[0].data)
 	</script>
 </body>
 </html>
